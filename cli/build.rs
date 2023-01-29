@@ -335,6 +335,7 @@ fn create_cli_snapshot(snapshot_path: PathBuf, files: Vec<PathBuf>) {
     deno_napi::init::<PermissionsContainer>(false),
     deno_http::init(),
     deno_flash::init::<PermissionsContainer>(false), // No --unstable
+    deno_grpc::init(),
   ];
 
   create_snapshot(CreateSnapshotOptions {

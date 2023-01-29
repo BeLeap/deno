@@ -126,6 +126,7 @@
     consoleSize: __bootstrap.tty.consoleSize,
     gid: __bootstrap.os.gid,
     uid: __bootstrap.os.uid,
+    testGrpc: __bootstrap.grpc.testGrpc,
   };
 
   __bootstrap.denoNsUnstable = {
@@ -150,5 +151,6 @@
     serve: __bootstrap.flash.serve,
     upgradeHttp: __bootstrap.http.upgradeHttp,
     upgradeHttpRaw: __bootstrap.flash.upgradeHttpRaw,
+    grpc: __bootstrap.grpc,
   };
 })(this);

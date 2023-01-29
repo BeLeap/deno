@@ -1050,6 +1050,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "deno_grpc"
+version = "0.1.0"
+dependencies = [
+ "deno_core",
+]
+
+[[package]]
 name = "deno_http"
 version = "0.84.0"
 dependencies = [
@@ -1164,6 +1171,7 @@ dependencies = [
  "deno_fetch",
  "deno_ffi",
  "deno_flash",
+ "deno_grpc",
  "deno_http",
  "deno_napi",
  "deno_net",

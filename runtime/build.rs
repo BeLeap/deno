@@ -150,6 +150,7 @@ mod not_docs {
       deno_napi::init::<Permissions>(false),
       deno_http::init(),
       deno_flash::init::<Permissions>(false), // No --unstable
+      deno_grpc::init(),
     ];
 
     create_snapshot(CreateSnapshotOptions {

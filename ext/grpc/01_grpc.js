@@ -2,14 +2,16 @@
 
 ((window) => {
   const core = window.Deno.core;
+  const { ops } = core;
 
   class Grpc {
     async test() {
       let result;
       try {
-        result = await core.opAsync("op_test");
+        console.log(`core:: ${JSON.stringify(core)}`);
+        result = ops.op_test();
       } catch (error) {
-        console.log("error");
+        console.log(`error:: ${error}`);
       }
       console.log(result);
 

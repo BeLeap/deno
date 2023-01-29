@@ -11,6 +11,6 @@ pub fn init() -> Extension {
 }
 
 #[op]
-async fn op_test() -> Result<String, anyhow::Error> {
+fn op_test() -> Result<String, anyhow::Error> {
   return Ok(String::from("LoremIpsum"));
 }

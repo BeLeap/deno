@@ -1,7 +1,7 @@
 use deno_core::{anyhow, include_js_files, op, Extension};
 
 pub fn init() -> Extension {
-  Extension::builder()
+  Extension::builder(env!("CARGO_PKG_NAME"))
     .js(include_js_files!(
       prefix "deno:ext/grpc",
       "01_grpc.js",

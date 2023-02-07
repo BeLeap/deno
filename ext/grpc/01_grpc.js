@@ -13,7 +13,6 @@
       } catch (error) {
         console.log(`error:: ${error}`);
       }
-      console.log(result);
 
       return result;
     }

@@ -276,6 +276,7 @@ impl MainWorker {
       deno_http::init(),
       deno_flash::init::<PermissionsContainer>(unstable),
       ops::http::init(),
+      deno_grpc::init(),
       // Permissions ext (worker specific state)
       perm_ext,
     ];
